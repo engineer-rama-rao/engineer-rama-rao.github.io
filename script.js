@@ -52,6 +52,14 @@
     { src: 'assets/projects/image43.png',  alt: 'Strategic plan / network drawing' }
   ];
 
+  // Derive WebP thumb + full paths from the original JPG/PNG path
+  function webpThumb(src) {
+    return src.replace(/^assets\/projects\/(image\d+)\.(jpg|jpeg|png)$/i, 'assets/projects/$1-thumb.webp');
+  }
+  function webpFull(src) {
+    return src.replace(/^assets\/projects\/(image\d+)\.(jpg|jpeg|png)$/i, 'assets/projects/$1.webp');
+  }
+
   var gallery = document.getElementById('gallery');
   if (gallery) {
     var frag = document.createDocumentFragment();
@@ -61,12 +69,24 @@
       btn.type = 'button';
       btn.setAttribute('data-index', String(i));
       btn.setAttribute('aria-label', 'Open image: ' + img.alt);
+
+      var picture = document.createElement('picture');
+      var srcWebp = document.createElement('source');
+      srcWebp.type = 'image/webp';
+      srcWebp.srcset = webpThumb(img.src) + ' 600w, ' + webpFull(img.src) + ' 1400w';
+      srcWebp.sizes = '(max-width: 720px) 50vw, 280px';
+      picture.appendChild(srcWebp);
+
       var im = document.createElement('img');
       im.src = img.src;
       im.alt = img.alt;
       im.loading = 'lazy';
       im.decoding = 'async';
-      btn.appendChild(im);
+      im.width = 600;
+      im.height = 450;
+      picture.appendChild(im);
+
+      btn.appendChild(picture);
       frag.appendChild(btn);
     });
     gallery.appendChild(frag);
@@ -83,7 +103,12 @@
   function openLightbox(i) {
     if (!lb || !lbImg) return;
     currentIndex = ((i % images.length) + images.length) % images.length;
-    lbImg.src = images[currentIndex].src;
+    // Use full-size WebP if browser supports it, else fall back to original
+    var webp = webpFull(images[currentIndex].src);
+    var test = new Image();
+    test.onload = function () { lbImg.src = webp; };
+    test.onerror = function () { lbImg.src = images[currentIndex].src; };
+    test.src = webp;
     lbImg.alt = images[currentIndex].alt;
     lb.hidden = false;
     document.body.style.overflow = 'hidden';

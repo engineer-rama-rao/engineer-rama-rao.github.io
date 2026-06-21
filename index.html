@@ -21,6 +21,8 @@
   <meta property="og:description" content="25+ years of highway, traffic and transportation engineering across London — TfL, TLRN, nine London boroughs, WSP. CDM 2015 Principal Designer. FCIHT, FIHE. Open to new opportunities.">
   <meta property="og:url" content="https://engineer-rama-rao.github.io/">
   <meta property="og:image" content="https://engineer-rama-rao.github.io/assets/icons/og-image.png">
+  <meta property="og:image:secure_url" content="https://engineer-rama-rao.github.io/assets/icons/og-image.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Rama H. S. Rao, CEng — Senior Project & Highway Engineer. 25+ years across TfL, the TLRN and nine London boroughs. Open to new opportunities.">
@@ -433,7 +435,10 @@
 
     <aside class="hero-card" aria-label="Profile">
       <figure class="hero-photo">
-        <img src="assets/rama-portrait.jpg" alt="Rama H. S. Rao" width="320" height="320" loading="eager">
+        <picture>
+          <source type="image/webp" srcset="assets/rama-portrait-sm.webp 480w, assets/rama-portrait.webp 720w" sizes="(max-width: 720px) 320px, 360px">
+          <img src="assets/rama-portrait.jpg" alt="Rama H. S. Rao — Senior Project & Highway Engineer" width="720" height="900" loading="eager" decoding="async" fetchpriority="high">
+        </picture>
       </figure>
       <div class="hero-card-row"><span>Location</span><strong>Uxbridge, London</strong></div>
       <div class="hero-card-row"><span>Recent clients</span><strong>LB Hillingdon, Slough BC, Oxfordshire CC, LB Newham, LB Islington, Surrey CC, TfL, WSP</strong></div>
