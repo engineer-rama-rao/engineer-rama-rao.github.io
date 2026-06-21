@@ -467,7 +467,7 @@ h1 .cred { color: var(--gold); font-weight: 600; }
 .timeline::before {
   content: "";
   position: absolute;
-  left: 130px;
+  left: 180px;
   top: 8px;
   bottom: 8px;
   width: 2px;
@@ -475,15 +475,15 @@ h1 .cred { color: var(--gold); font-weight: 600; }
 }
 .tl-item {
   display: grid;
-  grid-template-columns: 130px 1fr;
-  gap: 28px;
+  grid-template-columns: 170px 1fr;
+  gap: 40px;
   padding: 14px 0 22px;
   position: relative;
 }
 .tl-item::before {
   content: "";
   position: absolute;
-  left: 124px;
+  left: 174px;
   top: 22px;
   width: 14px;
   height: 14px;
@@ -498,7 +498,9 @@ h1 .cred { color: var(--gold); font-weight: 600; }
   color: var(--ink-soft);
   letter-spacing: 0.3px;
   padding-top: 18px;
+  padding-right: 18px;
   text-align: right;
+  white-space: nowrap;
 }
 .tl-body {
   background: #fff;

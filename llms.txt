@@ -58,7 +58,14 @@
 
 ## Technical tools
 
-AutoCAD, AutoTrack, AutoSign, ARCADY, PICADY, TRANSYT, VISSIM, TfL Spearmint, Prince2-based PM, Junction Modelling.
+AutoCAD, Civil 3D, AutoTrack, AutoSign, KeySigns, KeyLines, ARCADY, PICADY, TRANSYT, VISSIM, TfL Spearmint, Prince2-based PM, NEC3 contracts, PMO, Junction Modelling, Road Safety Audit.
+
+## Education
+
+- Bachelor of Civil Engineering (BE)
+- Trained Landscape Designer (formal landscape design training)
+- CDMC (CDM Coordinator) certified
+- Postgraduate research at UCL (pedestrian/cyclist conflict in shared environments)
 
 ## Research
 
