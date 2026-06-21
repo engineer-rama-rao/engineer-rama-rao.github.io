@@ -26,6 +26,12 @@
   <meta property="og:image:alt" content="Rama H. S. Rao, CEng — Senior Project & Highway Engineer. 25+ years across TfL, the TLRN and nine London boroughs. Open to new opportunities.">
   <meta property="profile:first_name" content="Rama">
   <meta property="profile:last_name" content="Rao">
+  <meta property="profile:username" content="engineer-rama-rao">
+  <meta property="profile:gender" content="female">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="Rama H. S. Rao — Portfolio">
+  <meta property="article:author" content="Rama H. S. Rao">
+  <meta property="article:section" content="Engineering Portfolio">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -36,28 +42,59 @@
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
   <link rel="alternate icon" href="assets/icons/favicon.svg">
 
+  <!-- Search-engine signals -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="bingbot" content="index, follow">
+  <meta name="rating" content="General">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="distribution" content="global">
+  <meta name="revisit-after" content="3 days">
+  <meta name="language" content="English">
+  <meta http-equiv="content-language" content="en-GB">
+  <meta name="geo.region" content="GB-LND">
+  <meta name="geo.placename" content="London, United Kingdom">
+  <meta name="geo.position" content="51.5074;-0.1278">
+  <meta name="ICBM" content="51.5074, -0.1278">
+
+  <!-- Link relations recognised by search engines -->
+  <link rel="author" href="https://engineer-rama-rao.github.io/#rama">
+  <link rel="me" href="https://www.linkedin.com/in/rama-rao-39035815/">
+  <link rel="me" href="mailto:rama_h_s@hotmail.com">
+  <link rel="alternate" type="application/rss+xml" title="Rama Rao — availability feed" href="feed.xml">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 
-  <!-- JSON-LD: Person schema for Google Knowledge Graph -->
+  <!-- JSON-LD: Person schema (primary Knowledge Graph entity) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://engineer-rama-rao.github.io/#rama",
     "name": "Rama H. S. Rao",
-    "alternateName": "Ramya Rao",
+    "givenName": "Rama",
+    "additionalName": "H. S.",
+    "familyName": "Rao",
+    "alternateName": ["Ramya Rao", "Rama Rao", "Mrs. Rama H. S. Rao"],
     "honorificPrefix": "Mrs.",
     "honorificSuffix": "CEng, FCIHT, FIHE",
     "jobTitle": "Senior Project & Highway Engineer",
-    "description": "Chartered Civil Engineer with 25+ years' experience in highway, traffic and transportation engineering across London — including TfL Road Network (TLRN), nine London boroughs, and consultancies. CDM 2015 Principal Designer, Road Safety Auditor (RSA 1–2), FCIHT and FIHE Fellow.",
+    "description": "Chartered Civil Engineer (CEng) with 25+ years' experience delivering safety-critical highway, traffic and transportation engineering schemes across London — including the TfL Road Network (TLRN), nine London boroughs, and consultancies. CDM 2015 Principal Designer, Road Safety Auditor (RSA Modules 1 & 2), Fellow of the Chartered Institution of Highways & Transportation (FCIHT), and Fellow of the Institution of Highway Engineers (FIHE). Currently available immediately for senior project, design, principal-designer, road-safety, active-travel and street-lighting engineering roles across the UK.",
+    "image": "https://engineer-rama-rao.github.io/assets/rama-portrait.jpg",
     "email": "mailto:rama_h_s@hotmail.com",
     "telephone": "+44-7714-102248",
     "url": "https://engineer-rama-rao.github.io/",
+    "gender": "Female",
+    "nationality": { "@type": "Country", "name": "United Kingdom" },
+    "knowsLanguage": ["English", "Kannada", "Hindi"],
     "sameAs": [
-      "https://www.linkedin.com/in/rama-rao-39035815/"
+      "https://www.linkedin.com/in/rama-rao-39035815/",
+      "https://github.com/engineer-rama-rao",
+      "https://calendly.com/engineer_rama"
     ],
     "address": {
       "@type": "PostalAddress",
@@ -65,40 +102,237 @@
       "addressRegion": "Greater London",
       "addressCountry": "GB"
     },
+    "workLocation": [
+      { "@type": "Place", "name": "Greater London, UK" },
+      { "@type": "Place", "name": "South East England" },
+      { "@type": "Place", "name": "United Kingdom (relocate)" }
+    ],
     "alumniOf": [
-      {
-        "@type": "EducationalOrganization",
-        "name": "University College London (UCL)",
-        "url": "https://www.ucl.ac.uk/"
-      }
+      { "@type": "EducationalOrganization", "name": "University College London (UCL)", "url": "https://www.ucl.ac.uk/" }
     ],
     "memberOf": [
-      {
-        "@type": "Organization",
-        "name": "Chartered Institution of Highways & Transportation (CIHT)",
-        "url": "https://www.ciht.org.uk/"
-      },
-      {
-        "@type": "Organization",
-        "name": "Institution of Highway Engineers (IHE)",
-        "url": "https://theihe.org/"
-      }
+      { "@type": "Organization", "name": "Chartered Institution of Highways & Transportation (CIHT)", "url": "https://www.ciht.org.uk/" },
+      { "@type": "Organization", "name": "Institution of Highway Engineers (IHE)", "url": "https://theihe.org/" },
+      { "@type": "Organization", "name": "Engineering Council UK", "url": "https://www.engc.org.uk/" }
+    ],
+    "hasCredential": [
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "Professional Certification", "name": "Chartered Engineer (CEng)" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "Professional Certification", "name": "Fellow CIHT (FCIHT)" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "Professional Certification", "name": "Fellow IHE (FIHE)" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "Professional Certification", "name": "CDM 2015 Principal Designer" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "Professional Certification", "name": "Road Safety Audit (RSA Modules 1 & 2)" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "Professional Certification", "name": "NEC3 Contracts" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "Professional Certification", "name": "PMO" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "Professional Certification", "name": "Six Sigma White Belt" }
     ],
     "knowsAbout": [
       "Highway Engineering",
-      "Transport for London (TfL) Road Network",
+      "Senior Project Engineering",
+      "Senior Highway Engineer",
+      "Principal Highway Engineer",
+      "Transport for London (TfL) Road Network (TLRN)",
       "Road Safety Engineering",
-      "Junction & Corridor Improvement Design",
+      "Road Safety Audit",
+      "Junction and Corridor Improvement Design",
+      "Active Travel Engineering",
+      "Healthy Streets",
+      "School Streets",
+      "Controlled Parking Zones (CPZ)",
+      "Street Lighting Design",
+      "Part-Night Lighting",
+      "Decarbonisation of Local Roads",
+      "DfT Live Labs 2",
       "CDM 2015 Principal Designer Duties",
-      "Active Travel & Healthy Streets",
-      "Street Lighting & Part-Night Lighting",
       "NEC3 Contract Management",
-      "AutoCAD, ARCADY, PICADY, TRANSYT"
+      "Section 278 / Section 106 / Section 38 / Section 104 Agreements",
+      "Traffic Regulation Orders (TROs)",
+      "AutoCAD",
+      "AutoTrack",
+      "ARCADY",
+      "PICADY",
+      "TRANSYT",
+      "VISSIM",
+      "TfL Spearmint",
+      "Prince2",
+      "Public sector engineering delivery",
+      "Highways consultancy",
+      "Stakeholder consultation",
+      "Accident analysis"
     ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "London Borough of Hillingdon",
+      "url": "https://www.hillingdon.gov.uk/"
+    },
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Senior Highway Engineer",
+      "occupationLocation": { "@type": "Country", "name": "United Kingdom" },
+      "skills": "Highway engineering, road safety, junction design, active travel, CDM 2015, NEC3, AutoCAD, ARCADY, PICADY, TRANSYT",
+      "experienceRequirements": "25+ years",
+      "qualifications": "CEng, FCIHT, FIHE, CDM 2015 Principal Designer, RSA 1-2"
+    },
     "seeks": {
       "@type": "Demand",
-      "name": "Senior Project / Highway Engineer roles in London and the South East"
+      "name": "Senior Project / Highway Engineer roles in the UK",
+      "availability": "InStock",
+      "availabilityStarts": "2026-06-21"
     }
+  }
+  </script>
+
+  <!-- JSON-LD: WebSite with SiteNavigationElement & SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://engineer-rama-rao.github.io/#website",
+    "url": "https://engineer-rama-rao.github.io/",
+    "name": "Rama H. S. Rao — Senior Project & Highway Engineer",
+    "description": "Portfolio, CV and project history of Rama H. S. Rao, CEng. Senior Highway Engineer, London — 25+ years across TfL, the TLRN and nine London boroughs. Available immediately.",
+    "inLanguage": "en-GB",
+    "publisher": { "@id": "https://engineer-rama-rao.github.io/#rama" },
+    "about": { "@id": "https://engineer-rama-rao.github.io/#rama" },
+    "potentialAction": [
+      {
+        "@type": "ContactAction",
+        "name": "Book a 30-minute call",
+        "target": "https://calendly.com/engineer_rama/30min"
+      },
+      {
+        "@type": "ReadAction",
+        "name": "Download CV",
+        "target": "https://engineer-rama-rao.github.io/cv/Rama-Rao-CV.pdf"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: ProfilePage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://engineer-rama-rao.github.io/#profile",
+    "url": "https://engineer-rama-rao.github.io/",
+    "name": "Rama H. S. Rao — Profile",
+    "mainEntity": { "@id": "https://engineer-rama-rao.github.io/#rama" },
+    "primaryImageOfPage": "https://engineer-rama-rao.github.io/assets/rama-portrait.jpg",
+    "dateModified": "2026-06-21",
+    "datePublished": "2026-06-21",
+    "lastReviewed": "2026-06-21",
+    "inLanguage": "en-GB"
+  }
+  </script>
+
+  <!-- JSON-LD: JobPosting (Rama as the available candidate — reverse JobPosting helps recruiter-side LLM tools) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "@id": "https://engineer-rama-rao.github.io/#availability",
+    "title": "Senior Project & Highway Engineer — available immediately",
+    "description": "Rama H. S. Rao, CEng, FCIHT, FIHE, is available immediately for senior highway, traffic and transport engineering roles across the UK. 25+ years experience with TfL, the TLRN and nine London boroughs. Permanent, fixed-term contract, day-rate contract or interim. Five days a week on-site. Happy to relocate anywhere in the UK.",
+    "datePosted": "2026-06-21",
+    "validThrough": "2026-12-31",
+    "employmentType": ["FULL_TIME", "CONTRACTOR", "TEMPORARY"],
+    "jobLocationType": "TELECOMMUTE",
+    "jobLocation": [
+      {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "London",
+          "addressRegion": "Greater London",
+          "addressCountry": "GB"
+        }
+      }
+    ],
+    "applicantLocationRequirements": { "@type": "Country", "name": "United Kingdom" },
+    "industry": "Highway Engineering, Civil Engineering, Transport Engineering",
+    "occupationalCategory": ["Senior Highway Engineer", "Principal Highway Engineer", "Senior Project Engineer", "CDM 2015 Principal Designer", "Road Safety Engineer", "Senior Design Engineer", "Active Travel Engineer", "Street Lighting Engineer"],
+    "qualifications": "Chartered Engineer (CEng), FCIHT, FIHE, CDM 2015 Principal Designer, Road Safety Audit (RSA 1–2), NEC3",
+    "experienceRequirements": "25+ years",
+    "skills": "Highway engineering, road safety engineering, junction design, active travel, healthy streets, CDM 2015, NEC3, S278, S106, AutoCAD, ARCADY, PICADY, TRANSYT, VISSIM, TfL Spearmint, junction modelling",
+    "hiringOrganization": {
+      "@type": "Person",
+      "@id": "https://engineer-rama-rao.github.io/#rama"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ for recruiters (rich snippets in Google search) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Rama H. S. Rao available now?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Rama is available immediately for senior highway, traffic and transport engineering roles in the UK. She is open to permanent, fixed-term contract, day-rate contract or interim work, and happy to be on-site five days a week."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What roles is she a strong fit for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Senior or Principal Highway Engineer, Senior Project Engineer or Project Manager (Highways & Transport), Senior Design Engineer (Highways), CDM 2015 Principal Designer, Road Safety Engineer, Senior Traffic or Transport Engineer, Active Travel & Healthy Streets Lead, Street Lighting Engineer or PM, Controlled Parking Zone / Parking Engineer, Section 278 / Section 106 Engineer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can she work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Greater London and all London boroughs, the Home Counties, and the South East. She is also happy to relocate anywhere in the United Kingdom for the right role."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are her qualifications?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chartered Engineer (CEng) registered with the Engineering Council UK. Fellow of the Chartered Institution of Highways & Transportation (FCIHT). Fellow of the Institution of Highway Engineers (FIHE). CDM 2015 Principal Designer. Road Safety Audit Modules 1 and 2. NEC3, PMO, Six Sigma White Belt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What client experience does she have?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "25+ years across Transport for London (TfL) Road Network (TLRN), nine London boroughs — Hillingdon, Camden, Brent, Ealing, Haringey, Islington, Newham, Westminster, Hounslow — plus Slough BC, Oxfordshire CC, Surrey CC, St Albans DC, and the consultancies WSP, WSP–PB, Watermen Aspen and Hounslow Highways."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get in touch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Book a 30-minute call directly at https://calendly.com/engineer_rama/30min, WhatsApp or call +44 7714 102248, or email rama_h_s@hotmail.com. Full portfolio and CV at https://engineer-rama-rao.github.io."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://engineer-rama-rao.github.io/" },
+      { "@type": "ListItem", "position": 2, "name": "Experience", "item": "https://engineer-rama-rao.github.io/#experience" },
+      { "@type": "ListItem", "position": 3, "name": "Projects", "item": "https://engineer-rama-rao.github.io/#projects" },
+      { "@type": "ListItem", "position": 4, "name": "Credentials", "item": "https://engineer-rama-rao.github.io/#certifications" },
+      { "@type": "ListItem", "position": 5, "name": "Roles I'm a fit for", "item": "https://engineer-rama-rao.github.io/#fit" },
+      { "@type": "ListItem", "position": 6, "name": "Send Rama a role", "item": "https://engineer-rama-rao.github.io/#intake" },
+      { "@type": "ListItem", "position": 7, "name": "Contact", "item": "https://engineer-rama-rao.github.io/#contact" }
+    ]
   }
   </script>
 </head>

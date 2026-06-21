@@ -1,0 +1,36 @@
+/* TEAM */
+
+  Owner:   Rama H. S. Rao, CEng (Civil)
+  Site:    https://engineer-rama-rao.github.io
+  Contact: rama_h_s@hotmail.com
+  Phone:   +44 7714 102248
+  Twitter: —
+  LinkedIn: https://www.linkedin.com/in/rama-rao-39035815/
+  From:    Uxbridge, London, United Kingdom
+
+/* CREDENTIALS */
+
+  Chartered Engineer (CEng) — Engineering Council UK
+  Fellow — Chartered Institution of Highways & Transportation (FCIHT)
+  Fellow — Institution of Highway Engineers (FIHE)
+  CDM 2015 Principal Designer
+  Road Safety Audit (Modules 1 & 2)
+  NEC3
+
+/* STATUS */
+
+  Available immediately for senior project, design, principal-designer,
+  road-safety, active-travel and street-lighting engineering roles
+  anywhere in the United Kingdom.
+
+  Open to permanent, fixed-term contract, day-rate contract or interim.
+  Five days a week on-site, happy to relocate.
+
+/* SITE */
+
+  Last update:    2026-06-21
+  Language:       English (en-GB)
+  Standards:      HTML5, CSS3, ES2018
+  Components:     Static site on GitHub Pages
+  Doctype:        HTML5
+  IDE:            Various
