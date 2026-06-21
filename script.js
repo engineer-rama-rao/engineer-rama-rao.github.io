@@ -113,4 +113,27 @@
     else if (e.key === 'ArrowLeft') step(-1);
     else if (e.key === 'ArrowRight') step(1);
   });
+  // ----- Copy link button -----
+  var copyBtn = document.getElementById('copy-link-btn');
+  var copyLabel = document.getElementById('copy-link-label');
+  if (copyBtn && copyLabel) {
+    copyBtn.addEventListener('click', function () {
+      var url = 'https://engineer-rama-rao.github.io/';
+      var done = function () {
+        copyLabel.textContent = 'Copied ✓';
+        setTimeout(function () { copyLabel.textContent = 'Copy link'; }, 1800);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done, done);
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = url;
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+        done();
+      }
+    });
+  }
 })();

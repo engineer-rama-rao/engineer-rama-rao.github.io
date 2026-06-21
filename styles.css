@@ -749,11 +749,88 @@ h1 .cred { color: var(--gold); font-weight: 600; }
   display: block;
   word-break: break-word;
 }
+.contact-card-featured {
+  background: var(--gold) !important;
+  border-color: var(--gold) !important;
+  color: var(--navy) !important;
+}
+.contact-card-featured .contact-label { color: var(--navy) !important; opacity: 0.75; }
+.contact-card-featured strong { font-size: 18px; }
+.contact-card-featured:hover { background: #b8924a !important; color: var(--navy) !important; }
+
 .contact-address {
   color: #b8c4dc;
   font-size: 14px;
   margin: 0;
 }
+
+.refer-block {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+.refer-block h3 {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+.refer-block > p {
+  color: #b8c4dc;
+  font-size: 14.5px;
+  max-width: 60ch;
+  margin: 0 0 16px;
+}
+.refer-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.refer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.22);
+  color: #fff;
+  padding: 9px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background .15s, border-color .15s;
+  text-decoration: none;
+}
+.refer-btn:hover {
+  background: rgba(255,255,255,0.14);
+  border-color: var(--gold);
+  color: #fff;
+}
+
+/* ---------- Screen-reader / SEO keywords block ---------- */
+/* visible to crawlers and screen readers — visually compact at page bottom */
+.sr-keywords {
+  background: var(--bg-alt);
+  padding: 24px 0;
+  font-size: 12px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.sr-keywords h2 {
+  max-width: var(--maxw);
+  margin: 0 auto 8px;
+  padding: 0 var(--space);
+  font-size: 13px;
+  color: var(--navy);
+  font-weight: 700;
+}
+.sr-keywords p {
+  max-width: var(--maxw);
+  margin: 4px auto;
+  padding: 0 var(--space);
+}
+.sr-keywords a { color: var(--navy); text-decoration: underline; }
 
 /* ---------- Footer ---------- */
 .footer {
