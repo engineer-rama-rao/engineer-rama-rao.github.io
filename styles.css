@@ -243,6 +243,49 @@ h1 .cred { color: var(--gold); font-weight: 600; }
   margin-bottom: 24px;
 }
 
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 14px;
+  margin: 0 0 22px;
+  padding: 0;
+}
+.hero-stats > div {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  box-shadow: var(--shadow-sm);
+}
+.hero-stats dt {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 4px;
+}
+.hero-stats dd {
+  margin: 0;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1;
+}
+.hero-stats dd span {
+  color: var(--gold);
+}
+.hero-stats dd small {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  letter-spacing: 0.3px;
+  margin-top: 6px;
+}
+
 .hero-availability {
   list-style: none;
   padding: 0;
@@ -497,6 +540,88 @@ h1 .cred { color: var(--gold); font-weight: 600; }
   transition: transform .4s ease;
 }
 .gallery-item:hover img { transform: scale(1.04); }
+
+/* ---------- Research ---------- */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+}
+.research-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-sm);
+}
+.research-card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  color: var(--navy);
+  font-weight: 700;
+}
+.research-card p {
+  margin: 0 0 14px;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+.research-tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.research-tags li {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--navy);
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* ---------- Writing list ---------- */
+.writing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 12px;
+}
+.writing-list a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--navy);
+  transition: transform .12s ease, box-shadow .15s ease, border-color .15s ease;
+  height: 100%;
+}
+.writing-list a:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  box-shadow: var(--shadow-md);
+  color: var(--navy);
+}
+.writing-list strong {
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.writing-list span {
+  font-size: 14px;
+  color: var(--ink-soft);
+  font-weight: 400;
+}
 
 /* ---------- Credentials cards ---------- */
 .cred-cards {
