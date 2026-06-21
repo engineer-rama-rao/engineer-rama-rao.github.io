@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rajathn8.github.io/rama.github.io/sitemap.xml
+Sitemap: https://rama-rao-engineer.github.io/sitemap.xml

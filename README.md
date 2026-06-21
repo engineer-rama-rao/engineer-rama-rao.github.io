@@ -2,18 +2,21 @@
 
 Personal website for **Rama H. S. Rao, CEng** — Senior Project & Highway Engineer, FCIHT, FIHE.
 
-🌐 **Live site:** https://rajathn8.github.io/rama.github.io/
+🌐 **Live site (target):** https://rama-rao-engineer.github.io
 
 ## What's here
 
 A single-page static portfolio designed for recruiters and hiring managers:
 
-- Hero with availability, photo, headline credentials and one-click CTAs (CV download, email, phone, LinkedIn)
+- Hero with portrait, availability (immediate start, 5 days in office, happy to relocate), stat block (25+ / 9 / 2) and one-click CTAs (CV, email, phone, LinkedIn)
 - About / core competencies / technical tools
-- Full career timeline (12 roles, TfL → London boroughs → consultancies)
-- Selected projects gallery (42 images) with lightbox
-- Credentials & certifications (each linked to its source PDF)
-- SEO infrastructure: JSON-LD `Person` schema, Open Graph, Twitter card, sitemap, robots
+- Full career timeline (13 roles, TfL → London boroughs → consultancies)
+- Selected projects gallery (42 images) with keyboard-navigable lightbox
+- **Applied research** — UCL work framed as expertise, not student status
+- **Writing & thought leadership** — 10 curated LinkedIn posts
+- Credentials & certifications, each linked to its source PDF
+- SEO infrastructure: JSON-LD `Person` schema, Open Graph, branded 1200×630 social share card, sitemap, robots
+- 404 page and SVG favicon
 
 ## Project structure
 
@@ -26,16 +29,19 @@ A single-page static portfolio designed for recruiters and hiring managers:
 ├── robots.txt
 ├── sitemap.xml
 ├── cv/
-│   ├── Rama-Rao-CV.pdf              # Downloadable CV (recruiter-ready)
+│   ├── Rama-Rao-CV.pdf              # Downloadable CV
 │   ├── Rama-Rao-CV.docx             # Word original
-│   └── cv.html                      # HTML source used to generate the PDF
+│   └── cv.html                      # HTML source for the PDF
 ├── assets/
 │   ├── rama-portrait.jpg            # Hero portrait
-│   ├── icons/favicon.svg
+│   ├── icons/
+│   │   ├── favicon.svg
+│   │   ├── og-image.png             # 1200×630 social share card
+│   │   └── og-template.html         # HTML source for the OG card
 │   ├── projects/                    # 42 project images
 │   └── certifications/              # 9 certificate PDFs/JPG
-├── certifications/                  # Original source certificates
-├── linkedin_screenshots/            # Source LinkedIn snapshots
+├── certifications/                  # Source certificates (originals)
+├── linkedin_screenshots/            # Source LinkedIn screenshots
 └── Rama Portfolio.docx              # Original portfolio source
 ```
 
@@ -46,28 +52,46 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-## Publishing on GitHub Pages
+## 🚀 Publishing — moving to the new GitHub account
 
-1. Push to `main`.
-2. In the repo settings → **Pages**, choose **Deploy from a branch** → `main` / `/ (root)`.
-3. Site goes live at https://rajathn8.github.io/rama.github.io/ within a minute.
+The repo is currently under a development account. The plan is to publish from a new GitHub account owned by Rama so the public URL is clean:
 
-### Custom domain (optional)
+**Target URL:** `https://rama-rao-engineer.github.io`
 
-For a cleaner URL like `ramarao.co.uk`, add a `CNAME` file containing the domain, point a DNS `CNAME` to `rajathn8.github.io`, then enable HTTPS in Pages settings.
+### Step-by-step
+
+1. **Create a new GitHub account** for Rama at https://github.com/signup using username **`rama-rao-engineer`** (and an email she owns).
+2. **Create a new repo** on that account, named exactly **`rama-rao-engineer.github.io`** (this exact name is what makes Pages serve at the bare URL). Public, no README/.gitignore/LICENSE — empty.
+3. From this folder on your machine, add the new remote and push:
+   ```bash
+   git remote add rama https://github.com/rama-rao-engineer/rama-rao-engineer.github.io.git
+   git push rama main
+   ```
+4. On the new repo's **Settings → Pages**: source = "Deploy from a branch", branch = `main` / root, save.
+5. Within ~1 minute the site is live at https://rama-rao-engineer.github.io
+
+### Optional: custom domain later
+
+If you ever want `ramarao.co.uk` (or similar), buy the domain, add a `CNAME` file to the repo root containing the domain, and point DNS at GitHub Pages. Enable HTTPS in Pages settings.
 
 ## Maximising recruiter visibility
 
-After deploying, consider:
+After deploying, do all of these (each one takes 2 min):
 
-- **Google Search Console** — add and verify the site, submit `sitemap.xml`.
-- **Bing Webmaster Tools** — same.
-- **LinkedIn profile** — add the live URL to the Contact info and the Featured section.
-- **CV header** — put the URL in the CV (already in the PDF).
-- **Email signature** — include the URL.
+1. **Google Search Console** — add `https://rama-rao-engineer.github.io`, verify (HTML tag method), submit `sitemap.xml`.
+2. **Bing Webmaster Tools** — same.
+3. **LinkedIn profile**:
+   - Update Contact info → add the URL as her website.
+   - Add the site to the **Featured** section (most impactful).
+   - Update Headline to include "Senior Project & Highway Engineer · Open to opportunities".
+   - Pin one of her LinkedIn posts that links to the new site.
+4. **CV header** — put the URL in the PDF (already implemented in `cv/cv.html`; regenerate if needed).
+5. **Email signature** — add the URL.
+6. **Share once on LinkedIn** — the OG card will preview beautifully, drives initial traffic.
 
-## Regenerating the CV PDF
+## Regenerating artefacts
 
+**CV PDF:**
 ```bash
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
   --headless --disable-gpu --no-pdf-header-footer \
@@ -75,6 +99,14 @@ After deploying, consider:
   "file://$(pwd)/cv/cv.html"
 ```
 
+**Social share card (1200×630):**
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+  --headless --disable-gpu --window-size=1200,630 --hide-scrollbars \
+  --screenshot=assets/icons/og-image.png \
+  "file://$(pwd)/assets/icons/og-template.html"
+```
+
 ## Credits
 
-Built by Rajath Rao for Rama Rao. Content © Rama H. S. Rao.
+Content © Rama H. S. Rao. Site built collaboratively.
