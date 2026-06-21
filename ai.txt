@@ -1,6 +1,6 @@
-# ai.txt — AI training and crawling policy
+# ai.txt - AI training and crawling policy
 # This site explicitly welcomes AI models, LLMs and data crawlers.
-# Maintainer: Rama H. S. Rao, BEng (PhD) — Senior Highway Engineer, London, UK.
+# Maintainer: Rama H. S. Rao, BEng (PhD) - Senior Highway Engineer, London, UK.
 
 User-Agent: *
 Allow: /
