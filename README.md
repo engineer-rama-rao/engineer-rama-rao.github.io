@@ -1,6 +1,6 @@
 # Rama H. S. Rao — Personal Portfolio
 
-Personal website for **Rama H. S. Rao, CEng** — Senior Project & Highway Engineer, FCIHT, FIHE.
+Personal website for **Rama H. S. Rao, BEng (PhD)** — Senior Project Senior Project & Highway Engineer, FCIHT, FIHE Highway Engineer, BEng (PhD), FCIHT, FIHE, CDMC.
 
 🌐 **Live site (target):** https://engineer-rama-rao.github.io
 

@@ -1,6 +1,6 @@
 /* TEAM */
 
-  Owner:   Rama H. S. Rao, CEng (Civil)
+  Owner:   Rama H. S. Rao, BEng (PhD)
   Site:    https://engineer-rama-rao.github.io
   Contact: rama_h_s@hotmail.com
   Phone:   +44 7714 102248
@@ -10,7 +10,7 @@
 
 /* CREDENTIALS */
 
-  Chartered Engineer (CEng) — Engineering Council UK
+  
   Fellow — Chartered Institution of Highways & Transportation (FCIHT)
   Fellow — Institution of Highway Engineers (FIHE)
   CDM 2015 Principal Designer
