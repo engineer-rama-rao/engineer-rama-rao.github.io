@@ -2,7 +2,7 @@
 
 Personal website for **Rama H. S. Rao, CEng** — Senior Project & Highway Engineer, FCIHT, FIHE.
 
-🌐 **Live site (target):** https://rama-rao-engineer.github.io
+🌐 **Live site (target):** https://engineer-rama-rao.github.io
 
 ## What's here
 
@@ -56,19 +56,19 @@ python3 -m http.server 8000
 
 The repo is currently under a development account. The plan is to publish from a new GitHub account owned by Rama so the public URL is clean:
 
-**Target URL:** `https://rama-rao-engineer.github.io`
+**Target URL:** `https://engineer-rama-rao.github.io`
 
 ### Step-by-step
 
-1. **Create a new GitHub account** for Rama at https://github.com/signup using username **`rama-rao-engineer`** (and an email she owns).
-2. **Create a new repo** on that account, named exactly **`rama-rao-engineer.github.io`** (this exact name is what makes Pages serve at the bare URL). Public, no README/.gitignore/LICENSE — empty.
+1. **Create a new GitHub account** for Rama at https://github.com/signup using username **`engineer-rama-rao`** (and an email she owns). This matches her existing Lovable handle.
+2. **Create a new repo** on that account, named exactly **`engineer-rama-rao.github.io`** (username and repo name MUST match for Pages to serve at the bare URL). Public, no README/.gitignore/LICENSE — empty.
 3. From this folder on your machine, add the new remote and push:
    ```bash
-   git remote add rama https://github.com/rama-rao-engineer/rama-rao-engineer.github.io.git
+   git remote add rama https://github.com/engineer-rama-rao/engineer-rama-rao.github.io.git
    git push rama main
    ```
 4. On the new repo's **Settings → Pages**: source = "Deploy from a branch", branch = `main` / root, save.
-5. Within ~1 minute the site is live at https://rama-rao-engineer.github.io
+5. Within ~1 minute the site is live at https://engineer-rama-rao.github.io
 
 ### Optional: custom domain later
 
@@ -78,7 +78,7 @@ If you ever want `ramarao.co.uk` (or similar), buy the domain, add a `CNAME` fil
 
 After deploying, do all of these (each one takes 2 min):
 
-1. **Google Search Console** — add `https://rama-rao-engineer.github.io`, verify (HTML tag method), submit `sitemap.xml`.
+1. **Google Search Console** — add `https://engineer-rama-rao.github.io`, verify (HTML tag method), submit `sitemap.xml`.
 2. **Bing Webmaster Tools** — same.
 3. **LinkedIn profile**:
    - Update Contact info → add the URL as her website.
