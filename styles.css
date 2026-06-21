@@ -207,7 +207,16 @@ h1 {
   margin: 0 0 10px;
   font-weight: 700;
 }
-h1 .cred { color: var(--gold); font-weight: 600; }
+h1 .cred {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 0.55em;
+  letter-spacing: 0;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+}
 
 .tagline {
   font-size: clamp(16px, 1.6vw, 19px);
@@ -994,7 +1003,8 @@ h1 .cred { color: var(--gold); font-weight: 600; }
   .hero { padding: 32px 0 48px; }
   .hero-grid { gap: 24px; }
 
-  h1 { font-size: clamp(28px, 8vw, 38px); }
+  h1 { font-size: clamp(24px, 7vw, 32px); }
+  h1 .cred { font-size: 0.48em; margin-left: 4px; }
   .tagline { font-size: 15.5px; }
 
   .hero-photo { aspect-ratio: 1 / 1; max-height: 320px; }
